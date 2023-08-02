@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Ödünc";
     Layout = "~/Views/Shared/Admin_Layout.cshtml";
 }
@@ -52,7 +52,7 @@
           <div class="row">
             
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" >
                     <h4 class="card-title">Ödünç Verme İşlemi</h4>
 
 
@@ -60,7 +60,8 @@
                                                           <div class="form-group">
                                                               <label for="exampleInputName1">Üye Numarası</label>
 
-                                        <input type="text" class="form-control" name="UserId" value="@Model.UserId">
+                                        <input type="text" class="form-control" name="UserId" ><br />
+                                        <label for="exampleInputName1">Kitap Numarası</label>
                                         <input type="text" class="form-control" name="BookId" value="@Model.BookId" >
                            
                                                         </div>
@@ -82,27 +83,3 @@
         </div>
     </div>
 </body>
-
-<script>
-    //let data = {
-    //    BookId: $('#BookId').val(),
-    //    UserId: $('#UserId').val(),
-    //}
-    //$.ajax({
-    //    type: 'POST',
-    //    url: "/Admin/Odunc",
-    //    contentType: false,
-    //    processData: false,
-    //    cache: false,
-    //    data: data,
-    //    success: function (response) {
-    //        if (response.responseCode == 0) {
-    //            console.log($('#UserId').val());
-    //        }
-    //        else {
-    //            bootbox.alert(response.ResponseMessage);
-    //        }
-    //    },
-    //    error: errorCallback
-    //});
-</script>
