@@ -1,0 +1,59 @@
+﻿@using Entity.Models
+@model User
+@{
+    ViewData["Title"] = "Giriş";
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Kutuphane Otomasyonu</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="~/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/main-style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/admin_template/images/icon.png" />
+
+    <!-- Page-Level CSS -->
+    <link href="~/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+</head>
+
+<body class="body-Login-back">
+    <div class="container">
+
+        <div class="row">
+           
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Lütfen Giriş Yapın                               
+                        </h3>
+                       
+
+                    </div>
+
+                    <div class="panel-body">
+                        <form action="/User/Login" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Şifre" name="password" type="password" value="">
+                                </div>
+                               
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Giriş</button>
+                            </fieldset>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>

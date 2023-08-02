@@ -1,0 +1,133 @@
+﻿@using Entity.Models
+@model List<User>
+@{
+    ViewData["Title"] = "Üyeler";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+
+
+
+
+ <body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+
+
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+            
+            <div class="navbar-menu-wrapper d-flex align-items-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                        <h1 class="welcome-text">Hoşgeldin- <span class="text-black fw-bold">Kütüphane Otomasyonu</span></h1>
+                    </li>
+                </ul>
+            
+            </div>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:../../partials/_settings-panel.html -->
+           <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                   
+                    <li class="nav-item nav-category">Üye İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserListAll">Üyeleri Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserAddPage">Yeni Üye Ekle</a></li>
+
+                    <li class="nav-item nav-category">Kitap İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookListAllByAdmin">Kitapları Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookAddPage">Yeni Kitap Ekle</a></li>
+                     <li class="nav-item"> <a class="nav-link" href="/Admin/IadePage">Kitap İadesi</a></li>
+                    <br />
+                    <br />
+                    <li class="nav-item nav-category"> <a class="nav-link" href="/User/Logout">Çıkış Yap</a></li>
+
+
+                </ul>
+            </nav>           
+            <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Üyeler</h4>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Üye Numarası
+                                                </th>
+                                                <th>
+                                                    Ad
+                                                </th>
+                                                <th>
+                                                    Soyad
+                                                </th>
+                                                <th>
+                                                    Email
+                                                </th>
+                                                <th>
+                                                    Şifre
+                                                </th>
+                                                <th>
+                                                    İşlem
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @{
+                                                foreach (var user in Model)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            @user.id
+                                                        </td>
+
+                                                        <td>
+                                                            @user.first_name
+                                                        </td>
+                                                        <td>
+                                                            @user.last_name
+                                                        </td>
+                                                        <td>
+                                                            @user.email
+                                                        </td>
+                                                        <td>
+                                                            @user.password
+                                                        </td>
+                                                        <td>
+                                                            <a href="/Admin/UserDelete/@user.id">
+
+                                                                <button type="button" class="btn btn-danger btn-rounded btn-fw" onclick="return confirm('Hesabı silmek istediğine emin misin?');">Hesabı Sil</button>
+                                                            </a>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    
+                                                }
+                                            }
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+              </div>
+              </div>
+              </div>
+
+</div>
+</div>
+</body>

@@ -1,0 +1,38 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Kutuphane Otomasyonu</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="~/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/main-style.css" rel="stylesheet" />
+
+    <!-- Page-Level CSS -->
+    <link href="~/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/admin_template/images/icon.png" />
+
+
+</head>
+
+<body>
+    <header id="header">
+        <!--header-->
+        @await Html.PartialAsync("SideNavbar")
+
+    </header><!--/header-->
+    @RenderBody()
+    <!-- Core Scripts - Include with every page -->
+   
+
+</body>
+
+</html>
+
+

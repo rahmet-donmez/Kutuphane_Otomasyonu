@@ -1,0 +1,140 @@
+﻿@using Entity.Models
+@model List<Book>
+@{
+    ViewData["Title"] = "Kitaplar";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+
+
+
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+
+
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+
+            <div class="navbar-menu-wrapper d-flex align-items-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                        <h1 class="welcome-text">Hoşgeldin- <span class="text-black fw-bold">Kütüphane Otomasyonu</span></h1>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:../../partials/_settings-panel.html -->
+            <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    
+                    <li class="nav-item nav-category">Üye İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserListAll">Üyeleri Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserAddPage">Yeni Üye Ekle</a></li>
+
+
+                    <li class="nav-item nav-category">Kitap İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookListAllByAdmin">Kitapları Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookAddPage">Yeni Kitap Ekle</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/IadePage">Kitap İadesi</a></li>
+                    <br />
+                    <br />
+                    <li class="nav-item nav-category"> <a class="nav-link" href="/User/Logout">Çıkış Yap</a></li>
+
+                </ul>
+            </nav>           
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Kitaplar</h4>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    #
+                                                </th>
+                                                <th>
+                                                    Kitap Adı
+                                                </th>
+                                                
+                                                <th>
+                                                    İşlem
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @{
+                                                int i = 1;
+                                                foreach (var book in Model)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            @i
+                                                        </td>
+
+                                                        <td>
+                                                            @book.name
+                                                        </td>
+                                                       
+                                                        <td>
+                                                            @if (@book.statues == false)
+                                                            {
+                                                                <b>Mevcut Değil - </b>
+
+                                                            }
+                                                            else
+                                                            {
+                                                            <a href="/Admin/Odunc/@book.id">
+
+                                                                <button type="button" class="btn btn-danger btn-rounded btn-fw">Ödünç Ver</button>
+                                                            </a>
+
+                                                            }
+
+                                                       
+                                                            <a href="/Admin/BookUpdatePage/@book.id">
+
+                                                                <button type="button" class="btn btn-danger btn-rounded btn-fw">Güncelle</button>
+                                                            </a>
+                                                            <a href="/Admin/BookDelete/@book.id" >
+
+                                                                <button type="button" class="btn btn-danger btn-rounded btn-fw" onclick="return confirm('Kitabı silmek istediğine emin misin?');">Sil</button>
+                                                            </a>
+          
+                                                           
+                                                        </td>
+
+
+                                                    </tr>
+                                                    i++;
+                                                }
+                                            }
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,30 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Sayfa Bulunamadı";
+    Layout = null;
+}
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>@ViewData["Title"] - Kutuphane Otomasyonu</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="shortcut icon" href="~/admin_template/images/icon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <img class="ops" src="/assets/images/404.svg" />
+        <br />
+        <h3>
+            OOPS!!
+            <br /> Sayfa Bulunamadı
+        </h3>
+        <br />
+        <a class="buton" href="javascript:history.go(-1)">Geriye Dön</a>
+    </div>
+</body>
+
+</html>

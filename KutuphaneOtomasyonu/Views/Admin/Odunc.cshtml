@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Ödünc";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+@using Entity.Models;
+@model OduncIslem;
+
+
+
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+
+
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+
+            <div class="navbar-menu-wrapper d-flex align-items-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                        <h1 class="welcome-text">Hoşgeldin- <span class="text-black fw-bold">Kütüphane Otomasyonu</span></h1>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:../../partials/_settings-panel.html -->
+            <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                   
+                    <li class="nav-item nav-category">Üye İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserListAll">Üyeleri Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/UserAddPage">Yeni Üye Ekle</a></li>
+
+                    <li class="nav-item nav-category">Kitap İşlemleri</li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookListAllByAdmin">Kitapları Listele</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Admin/BookAddPage">Yeni Kitap Ekle</a></li>
+                     <li class="nav-item"> <a class="nav-link" href="/Admin/IadePage">Kitap İadesi</a></li>
+                    <br/>
+                     <br />
+                    <li class="nav-item nav-category"> <a class="nav-link" href="/User/Logout">Çıkış Yap</a></li>
+
+                </ul>
+            </nav>
+             <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+              <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Ödünç Verme İşlemi</h4>
+
+
+                                <form action="/Admin/Odunc" class="forms-sample" method="post" model="">
+                                                          <div class="form-group">
+                                                              <label for="exampleInputName1">Üye Numarası</label>
+
+                                        <input type="text" class="form-control" name="UserId" value="@Model.UserId">
+                                        <input type="text" class="form-control" name="BookId" value="@Model.BookId" >
+                           
+                                                        </div>
+
+                                                                    <button type="submit" class="btn btn-primary me-2">İşlemi Tamamla</button>
+                                                        <a href="/Admin/BookListAllByAdmin"><button class="btn btn-light">İptal</button></a>
+                                                    </form>
+                 
+                  
+                    
+                </div>
+              </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    //let data = {
+    //    BookId: $('#BookId').val(),
+    //    UserId: $('#UserId').val(),
+    //}
+    //$.ajax({
+    //    type: 'POST',
+    //    url: "/Admin/Odunc",
+    //    contentType: false,
+    //    processData: false,
+    //    cache: false,
+    //    data: data,
+    //    success: function (response) {
+    //        if (response.responseCode == 0) {
+    //            console.log($('#UserId').val());
+    //        }
+    //        else {
+    //            bootbox.alert(response.ResponseMessage);
+    //        }
+    //    },
+    //    error: errorCallback
+    //});
+</script>

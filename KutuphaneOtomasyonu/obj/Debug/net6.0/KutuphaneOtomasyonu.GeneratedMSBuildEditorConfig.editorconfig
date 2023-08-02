@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KutuphaneOtomasyonu
+build_property.RootNamespace = KutuphaneOtomasyonu
+build_property.ProjectDir = C:\Users\Rahmet\Documents\KutuphaneOtomasyonu\KutuphaneOtomasyonu\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Rahmet\Documents\KutuphaneOtomasyonu\KutuphaneOtomasyonu
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/BookAddPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQm9va0FkZFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/BookListAllByAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQm9va0xpc3RBbGxCeUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/BookUpdatePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQm9va1VwZGF0ZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/IadePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSWFkZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/Odunc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2R1bmMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/OduncListByUserForAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2R1bmNMaXN0QnlVc2VyRm9yQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/UserAddPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckFkZFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Admin/UserListAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckxpc3RBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Book/BookListAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rTGlzdEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Home/Back.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Process/OduncListByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc1xPZHVuY0xpc3RCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/AdminSideNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluU2lkZU5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/HeaderNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlck5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/SideNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVOYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/User/OduncListByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPZHVuY0xpc3RCeVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/User/ProcessListByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9jZXNzTGlzdEJ5VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/User/UserProcess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUHJvY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/Admin_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-h3ns361pag
+
+[C:/Users/Rahmet/Documents/KutuphaneOtomasyonu/KutuphaneOtomasyonu/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-24r0abd5pv

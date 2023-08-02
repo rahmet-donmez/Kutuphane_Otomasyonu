@@ -1,0 +1,82 @@
+﻿@using System.Security.Claims;
+
+
+      <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header -->
+            
+            <!-- end navbar-header -->
+            <!-- navbar-top-links -->
+           
+            <!-- end navbar-top-links -->
+
+        </nav>
+        <!-- end navbar top -->
+<!-- navbar side -->
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <!-- sidebar-collapse -->
+    <div class="sidebar-collapse">
+        <!-- side-menu -->
+        <ul class="nav" id="side-menu">
+            <li>
+                <!-- user image section-->
+                <div class="user-section">
+                    <div class="user-section-inner">
+                        <img src="~/img/user.jpg" alt="">
+                    </div>
+                    @{
+                       
+                        var a = User.Claims.Select(claim => new { claim.Value });
+                         List<string> degerler = new List<string>();
+
+            foreach (var i in a)
+            {
+                degerler.Add(i.Value);
+            }
+
+                       
+
+
+                        <div class="user-info">
+                            <div>@degerler[0]<strong> </strong>@degerler[1] </div>
+                        
+                    </div>
+                    }
+                </div>
+                <!--end user image section-->
+            </li>
+           <br>
+            <li class="">
+                <a href="/User/UserProcess"><i></i>Profil İşlemleri</a>
+            </li>
+            <!--
+
+
+           
+            <li>
+                <a href="/Book/BookListAll"><i ></i>Kitap Ödünç Al</a>
+            </li>
+           <li class="">
+                <a href="/Process/OduncListByUser"><i></i>Kitap İade Et</a>
+             </li>   -->
+            <li class="">
+                <a href="/Book/BookListAll"><i></i>Kitaplar</a>
+            </li>
+             <li class="">
+                <a href="/User/ProcessListByUser"><i></i>Kitap Hareketlerim</a>
+            </li>
+            <li class="">
+                <a href="/User/OduncListByUser"><i></i>İadesi Olan Kitaplar</a>
+            </li>
+             <li>
+                <a href="/User/Logout"><i class="fa fa-sign-out"></i>Çıkış Yap</a>
+            </li>
+           
+            
+            
+        </ul>
+        <!-- end side-menu -->
+    </div>
+    <!-- end sidebar-collapse -->
+</nav>
+<!-- end navbar side -->
